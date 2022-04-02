@@ -1,14 +1,13 @@
 {
-  "name": "discord-irc",
+  "name": "discord-wcng",
   "version": "2.9.0",
-  "description": "Connects IRC and Discord channels by sending messages back and forth.",
+  "description": "Connects Discord and WC-NG global chat by sending messages back and forth.",
   "keywords": [
     "discord",
-    "irc",
+    "wcng",
     "gateway",
     "bot",
-    "discord-irc",
-    "reactiflux"
+    "discord-wcng"
   ],
   "engines": {
     "node": ">=12.0.0"
@@ -17,31 +16,23 @@
   "bin": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:reactiflux/discord-irc.git"
-  },
-  "bugs": {
-    "url": "https://github.com/reactiflux/discord-irc/issues"
+    "url": "git@github.com:little-playground/discord-wcng.git"
   },
   "scripts": {
     "start": "node dist/index.js",
     "build": "babel lib --out-dir dist",
     "prepare": "npm run build",
     "lint": "eslint . --ignore-path .gitignore",
-    "coverage": "cross-env NODE_ENV=test nyc --require @babel/register mocha -- 'test/*.test.js'",
-    "save-coverage": "nyc report --reporter=lcov",
-    "test": "npm run lint && npm run coverage"
+    "test": "npm run lint"
   },
   "author": {
-    "name": "Reactiflux"
+    "name": "little-playground"
   },
   "license": "MIT",
   "dependencies": {
     "commander": "^7.2.0",
     "discord.js": "^12.5.3",
     "emoji-js": "^3.7.0",
-    "irc-colors": "1.5.0",
-    "irc-formatting": "1.0.0-rc3",
-    "irc-upd": "0.11.0",
     "lodash": "^4.17.21",
     "simple-markdown": "^0.7.3",
     "socket.io": "^4.4.1",
@@ -62,7 +53,7 @@
     "eslint": "^7.25.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
-    "mocha": "^8.3.2",
+    "mocha": "^9.2.2",
     "nyc": "^15.1.0",
     "sinon": "^10.0.0",
     "sinon-chai": "^3.6.0"
