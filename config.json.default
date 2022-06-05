@@ -1,0 +1,25 @@
+[
+  {
+    "wcng": {
+      "forceAuthentication": true,
+      "forceEncryption": true,
+      "fingerprint": "AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA",
+      "password": "yourtotallysecurepassword",
+      "ignore": [],
+      "format": "<{$discordChannel}><{$displayUsername}> {$text}",
+      "nickname": "discord",
+      "host": "yourserverdomain.org",
+      "port": "6664"
+    },
+    "discord": {
+      "defaultChannel": "#general",
+      "ignore": [],
+      "ignoreID": [],
+      "format": "<{$author}> {$withMentions}",
+      "token": "yoursecretdiscordbottoken",
+      "commandChat" : "!chat",
+      "commandUsers" : "!users",
+      "nickname": "wcng"
+    }
+  }
+]
